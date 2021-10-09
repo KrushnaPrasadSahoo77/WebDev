@@ -1,12 +1,93 @@
 <!DOCTYPE html>
+
 <html>
+<head>
+	<style>
+		#box1{
+			height: 0px;
+			width: 0px;
+			visibility: hidden;
+			background-color: red;
+		}
+		#box2{
+			height: 0px;
+			width: 0px;
+			visibility: hidden;
+			background-color: red;
+		}
+		#box3{
+			height: 0px;
+			width: 0px;
+			visibility: hidden;
+			background-color: red;
+		}
+		#box4{
+			height: 0px;
+			width: 0px;
+			visibility: hidden;
+			background-color: red;
+		}
+
+	</style>
+</head>
 <body>
 ​
-<p>I am normal</p>
-<p style="color:red;">I am red</p>
-<p style="color:blue;">I am blue</p>
-<p style="font-size:50px;">I am big</p>
+<p><button type="button" style.font-weight="200" onclick="myFunction1()" >I am normal</button></p>
+<div id="box1" ></div>
+<p ><button type="button" onclick="myFunction2()">I am red</button></p>
+<div id="box2" ></div>
+<p ><button type="button" onclick="myFunction3()">I am blue</button></p>
+<div id="box3" ></div>
+<p ><button type="button" onclick="myFunction4()">I am big</button></p>
+<div id="box4" ></div>
 ​
+
+
+<script type="text/javascript">
+function myFunction1() {
+	var animebox1=document.getElementById("box1")
+	            animebox1.style.width = "70px"; // width
+                animebox1.style.height = "70px"; // height
+                animebox1.style.visibility="visible";
+                animebox1.style.backgroundColor = 'white' ;
+                animebox1.style.border = '1.4px solid' ;
+                animebox1.style.top="100px";
+                animebox1.style.transition = "1s ease-in-out"
+                animebox1.style.transform = "scale(1.5) translate(150px)" 
+            }   
+function myFunction2() {
+	var animebox2=document.getElementById("box2")
+	            animebox2.style.width = "72px"; // width
+                animebox2.style.height = "72px"; // height
+                animebox2.style.visibility="visible";
+                animebox2.style.backgroundColor = 'red' ;
+                animebox2.style.top="100px";
+                animebox2.style.transition = "1s ease-in-out"
+                animebox2.style.transform = "scale(1.5) translate(150px)" 
+            }  
+            function myFunction3() {
+	var animebox3=document.getElementById("box3")
+	            animebox3.style.width = "72px"; // width
+                animebox3.style.height = "72px"; // height
+                animebox3.style.visibility="visible";
+                animebox3.style.backgroundColor = 'blue' ;
+                animebox3.style.top="100px";
+                animebox3.style.transition = "1s ease-in-out"
+                animebox3.style.transform = "scale(1.5) translate(150px)" 
+            } 
+        function myFunction4() {
+	var animebox4=document.getElementById("box4")
+	            animebox4.style.width = "110px"; // width
+                animebox4.style.height = "110px"; // height
+                animebox4.style.visibility="visible";
+                animebox4.style.backgroundColor = 'white' ;
+                animebox4.style.border = '1.4px solid' ;
+                animebox4.style.top="100px";
+                animebox4.style.transition = "1s ease-in-out"
+                animebox4.style.transform = "scale(1.5) translate(150px)" 
+            }
+
+</script>
 </body>
 </html>
 ​
